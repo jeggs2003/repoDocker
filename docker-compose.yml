@@ -50,7 +50,7 @@ services:
       - ./db/init:/docker-entrypoint-initdb.d:ro
     networks:
       ejemplo_net:
-        ipv4_address: 10.23.24.10.30
+        ipv4_address: 10.23.24.30
     restart: unless-stopped
 
 networks:
