@@ -1,5 +1,7 @@
 FROM php:8.2-apache
 
+RUN sed -i "s/Listen 80/Listen 5501/" /etc/apache2/ports.conf
+
 RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
